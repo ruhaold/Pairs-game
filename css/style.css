@@ -1,0 +1,90 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: Arial, Verdana, sans-serif;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 240px;
+    padding: 30px;
+    /* 
+    background-image: url('8203.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    */
+    background-color: rgb(226, 187, 137);
+    font-size: 0;
+    color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color .3s,box-shadow .6s ;
+}
+
+.card:hover {
+    background-color: rgb(241, 213, 176);
+}
+
+.card:active {
+    background-color: rgb(204, 159, 100);
+}
+
+.open {
+    font-size: 36px;
+    color: white;
+    background-color: rgb(37, 60, 188);
+    cursor: default;
+    box-shadow:0 0 30px #1900ff;
+}
+
+.open:hover{
+    background-color: rgb(37, 60, 188);
+}
+
+.open:active{
+    background-color: rgb(37, 60, 188);
+}
+
+.success {
+    font-size: 36px;
+    color: white;
+    background-color: #009705;
+    cursor: default;
+    box-shadow:0 0 30px #00ff40;
+}
+
+.success:hover{
+    background-color: #009705;
+}
+
+.success:active{
+    background-color: #009705;
+}
